@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="edtTxtBorder">#9e9e9e</color>
+    <color name="edtTxtContent">#ffffff</color>
+
+
+    <color name="btnBackground">#ebab37</color>
+    <color name="bckGroundLight">#80000000</color>
+
+    <color name="txtSignUpLink">#ae7f2d</color>
+
+    <color name="colorGreen">#65ba69</color>
+    <color name="colorRed">#ff6f42</color>
+</resources>

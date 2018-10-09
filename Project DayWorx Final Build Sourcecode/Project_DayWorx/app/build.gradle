@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.project.dayworx"
+        minSdkVersion 19
+        targetSdkVersion 21
+        versionCode 3
+        versionName "1.0.3"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:design:26+'
+
+    // For butter knife
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+
+    // For network
+//    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+
+    // For Json parsing
+    compile 'com.google.code.gson:gson:2.7'
+
+    //for image loading
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    //for multiple image loading
+    compile 'com.github.darsh2:MultipleImageSelect:3474549'
+
+    compile 'com.google.android.gms:play-services-places:10.2.1'
+
+//    for image zooming
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.9.0'
+
+//    for chiplayout
+    compile "com.hootsuite.android:nachos:1.1.1"
+
+
+}
+
+
+
+

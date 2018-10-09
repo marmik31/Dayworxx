@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/margin_field"
+                android:layout_marginRight="@dimen/margin_field"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/logo" />
+
+
+                <EditText
+                    android:id="@+id/edTxtFirstName"
+                    style="@style/edTxtDefault"
+                    android:hint="First Name"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/edTxtLastName"
+                    style="@style/edTxtDefault"
+                    android:hint="Last Name"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/edTxtMobileNumber"
+                    style="@style/edTxtDefault"
+                    android:hint="Mobile Number"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/edTxtEmail"
+                    style="@style/edTxtDefault"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/edTxtPassword"
+                    style="@style/edTxtDefault"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:id="@+id/btnSignIn"
+                    style="@style/btnDefault"
+                    android:text="Sign up" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/btnToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:drawablePadding="@dimen/margin_left_right"
+            android:drawableRight="@drawable/arrow"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:text="Do you already have an account?"
+            android:textColor="@color/txtSignUpLink"
+            android:textSize="@dimen/text_body"
+            android:typeface="serif" />
+
+        <include layout="@layout/progressbar" />
+    </RelativeLayout>
+
+</LinearLayout>

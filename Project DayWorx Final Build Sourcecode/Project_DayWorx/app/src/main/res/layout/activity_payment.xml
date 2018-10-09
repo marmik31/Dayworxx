@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bckGroundLight">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margn_large"
+        android:src="@drawable/close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_medium"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:text="Please enter the recepient email address"
+            android:textAlignment="center"
+            android:textColor="@color/edtTxtContent"
+            android:textSize="@dimen/text_header" />
+
+        <com.hootsuite.nachos.NachoTextView
+            android:id="@+id/nacho_text_view"
+            style="@style/edTxtReport"
+            android:hint="Enter valid email address of recepient"
+            android:inputType="textEmailAddress"
+            app:chipBackground="@color/edtTxtBorder"
+            app:chipTextColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnBuy"
+            style="@style/btnDefault"
+            android:text="Buy Report" />
+    </LinearLayout>
+
+    <include layout="@layout/progressbar" />
+
+</RelativeLayout>

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_medium"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margn_large">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/btnSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/margin_medium"
+                    android:src="@drawable/setting" />
+
+                <ImageView
+                    android:id="@+id/imgViewUser"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/placeholder" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:text="Site Details"
+                android:textColor="@color/txtSignUpLink"
+                android:textSize="@dimen/edittxt_hint"
+                android:typeface="serif" />
+
+
+            <TextView
+                android:id="@+id/edTxtSiteAddress"
+                style="@style/edTxtReport"
+                android:focusable="false"
+                android:hint="Site Address"
+                android:inputType="text">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/edTxtProjectName"
+                style="@style/edTxtReport"
+                android:hint="Project Name"
+                android:inputType="text" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:background="@drawable/round_corner">
+
+                <Spinner
+                    android:id="@+id/spinnerTrade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:popupBackground="@android:color/black"
+                    android:spinnerMode="dropdown"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/edittxt_padding"
+                    android:text="Trade"
+                    android:textColor="@color/edtTxtContent"
+                    android:textSize="@dimen/edittxt_hint"
+                    android:typeface="serif"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:src="@drawable/select_arrow"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/btnDatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <RelativeLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_corner">
+
+                    <TextView
+                        android:id="@+id/txtViewDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/edittxt_padding"
+                        android:text="Monday"
+                        android:textColor="@color/edtTxtContent"
+                        android:textSize="@dimen/edittxt_hint"
+                        android:typeface="serif" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:src="@drawable/select_arrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_corner">
+
+                    <TextView
+                        android:id="@+id/txtViewDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/edittxt_padding"
+                        android:text="1st Sept 2017"
+                        android:textColor="@color/edtTxtContent"
+                        android:textSize="@dimen/edittxt_hint"
+                        android:typeface="serif" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:src="@drawable/select_arrow" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:text="Description"
+                android:textColor="@color/txtSignUpLink"
+                android:textSize="@dimen/edittxt_hint"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/edTxtOrderNo"
+                style="@style/edTxtReport"
+                android:hint="Order Number/Site Instruction"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edtTxtWorkRequired"
+                style="@style/edTxtReport"
+                android:gravity="top"
+                android:hint="What work was required ?"
+                android:inputType="textMultiLine"
+                android:minLines="2" />
+
+            <EditText
+                android:id="@+id/edtTxtWorkSpecificArea"
+                style="@style/edTxtReport"
+                android:gravity="top"
+                android:hint="What specific area of the building did you do the work ?"
+                android:inputType="textMultiLine"
+                android:minLines="3" />
+
+            <EditText
+                android:id="@+id/edtTxtRepairingDamages"
+                style="@style/edTxtReport"
+                android:gravity="top"
+                android:hint="If repairing damages, do you know which trade is possibly responsible ?"
+                android:inputType="textMultiLine"
+                android:minLines="3" />
+
+
+            <LinearLayout
+                android:id="@+id/timePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_corner">
+
+                    <TextView
+                        android:id="@+id/txtViewHrs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/edittxt_padding"
+                        android:text="00 Hrs"
+                        android:textColor="@color/edtTxtContent"
+                        android:textSize="@dimen/edittxt_hint"
+                        android:typeface="serif" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:src="@drawable/select_arrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_corner">
+
+                    <TextView
+                        android:id="@+id/txtViewMinutes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/edittxt_padding"
+                        android:text="00 Minutes"
+                        android:textColor="@color/edtTxtContent"
+                        android:textSize="@dimen/edittxt_hint"
+                        android:typeface="serif" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:src="@drawable/select_arrow" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/edtTxtMaterialUsed"
+                style="@style/edTxtReport"
+                android:gravity="top"
+                android:hint="Material Used ?"
+                android:inputType="textMultiLine"
+                android:minLines="3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:text="Labour"
+                android:textColor="@color/txtSignUpLink"
+                android:textSize="@dimen/edittxt_hint"
+                android:typeface="serif" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:background="@drawable/round_corner" />
+
+            <LinearLayout
+                android:id="@+id/btnAddAnotherDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_tiny">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/add" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:text="Add Day and Hours"
+                    android:textColor="@color/edtTxtContent"
+                    android:textSize="@dimen/edittxt_hint"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:fontFamily="serif"
+                android:text="Total time"
+                android:textColor="@color/txtSignUpLink"
+                android:textSize="@dimen/edittxt_hint"
+                android:typeface="serif" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_small"
+                android:background="@drawable/round_corner">
+
+                <TextView
+                    android:id="@+id/totalWorkingHours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/edittxt_padding"
+                    android:text="00 : 00 Hrs"
+                    android:textColor="@color/edtTxtContent"
+                    android:textSize="@dimen/edittxt_hint"
+                    android:typeface="serif" />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnNext"
+                style="@style/btnDefault"
+                android:text="Next" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/progressbar" />
+</RelativeLayout>

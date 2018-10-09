@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/lyOutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bckGroundLight"
+        android:padding="@dimen/margin_small">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/margin_small"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Report"
+            android:textColor="@color/edtTxtContent"
+            android:textSize="@dimen/text_header" />
+    </RelativeLayout>
+
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lyOutHeader"
+        android:background="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/btnBuyReport"
+        style="@style/btnDefault"
+        android:layout_margin="@dimen/margin_medium"
+        android:text="Buy Report" />
+
+
+    <include layout="@layout/progressbar" />
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bckGroundLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Forgot Password"
+                android:textColor="@color/edtTxtContent"
+                android:textSize="@dimen/text_header" />
+
+            <ImageView
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_small"
+                android:padding="@dimen/margin_tiny"
+                android:src="@drawable/close" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edtTxtMobileNumber"
+            style="@style/edTxtDefault"
+            android:hint="Mobile Number"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edTxtEmail"
+            style="@style/edTxtDefault"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/btnSend"
+            style="@style/btnDefault"
+            android:layout_margin="@dimen/margin_small"
+            android:text="Send" />
+    </LinearLayout>
+
+</RelativeLayout>

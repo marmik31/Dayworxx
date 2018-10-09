@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">DayWorx</string>
+
+    <!-- Other -->
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="retry">Retry</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="user_login_id">Mobile Number</string>
+    <string name="preferred_store">Preferred Store :</string>
+
+
+    <!-- Error messages -->
+    <string name="error_title">Error : </string>
+    <string name="error_app_update">Need to update app</string>
+    <string name="error_technical_problem">Sorry, we seem to be experiencing a technical issue. Please try again shortly.</string>
+    <string name="error_internet_check">Internet connection is not available. Please enable wifi or internet data.</string>
+    <string name="error_required">Required</string>
+    <string name="error_valid_suburb">Select valid suburb</string>
+    <string name="error_confirm_password">New Password and Confirm Password must be same</string>
+    <string name="error_checkout_address">Please select address</string>
+    <string name="error_checkout_date_time">Please select date and time</string>
+    <string name="error_order_onhold">Your order is on hold</string>
+    <string name="error_order_cancelled">Your order is cancelled</string>
+    <string name="error_valid_email">Enter valid email</string>
+
+</resources>

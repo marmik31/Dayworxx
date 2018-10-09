@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/lyOutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_small">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/margin_small"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Feedback"
+            android:textColor="@color/edtTxtContent"
+            android:textSize="@dimen/text_header"
+            android:typeface="serif" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lyOutHeader"
+        android:layout_margin="@dimen/margin_medium"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtTxtFeedback"
+            style="@style/edTxtReport"
+            android:gravity="top"
+            android:hint="Please provide your valuable feedback."
+            android:inputType="textMultiLine"
+            android:minLines="10" />
+
+
+        <Button
+            android:id="@+id/btnSendFeedback"
+            style="@style/btnDefault"
+            android:text="Send Feedback" />
+
+    </LinearLayout>
+
+    <include layout="@layout/progressbar" />
+</RelativeLayout>

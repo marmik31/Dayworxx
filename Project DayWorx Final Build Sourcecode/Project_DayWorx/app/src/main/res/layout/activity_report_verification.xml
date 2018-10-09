@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_medium"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margn_large">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/margin_small"
+                    android:src="@drawable/back_arrow"
+                    android:visibility="gone" />
+
+
+                <RelativeLayout
+                    android:id="@+id/btnUploadPic"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_medium">
+
+
+                    <ImageView
+                        android:id="@+id/imgSelfieVerification"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/placeholder" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="@dimen/margin_small"
+                        android:src="@drawable/pencil" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/btnSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/margin_medium"
+                    android:src="@drawable/setting" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:text="Selfie for Verification"
+                android:textColor="@color/txtSignUpLink"
+                android:textSize="@dimen/edittxt_hint"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/edTxtName"
+                style="@style/edTxtReport"
+                android:hint="Name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edTxtTitle"
+                style="@style/edTxtReport"
+                android:hint="Title"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edTxtCompany"
+                style="@style/edTxtReport"
+                android:hint="Company"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/txtViewDate"
+                style="@style/edTxtReport"
+                android:hint="Please select Date" />
+
+            <EditText
+                android:id="@+id/edTxtComments"
+                style="@style/edTxtReport"
+                android:gravity="top"
+                android:hint="Comments"
+                android:inputType="textMultiLine"
+                android:minLines="2" />
+
+            <Button
+                android:id="@+id/btnConfirm"
+                style="@style/btnDefault"
+                android:text="Confirm" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/progressbar" />
+</RelativeLayout>
